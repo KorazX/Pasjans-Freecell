@@ -95,7 +95,7 @@ void DEKODOWANIE(int liczba)
 }
 void POMOC(){
 cout<<"==================================================================================="<<endl
-    <<"=                               PASJANS 1.2.1                                     ="<<endl
+    <<"=                               PASJANS 1.3                                       ="<<endl
     <<"==================================================================================="<<endl
     <<"=                                                                                 ="<<endl
     <<"= Legenda:                                                                        ="<<endl
@@ -394,8 +394,10 @@ int main()
     //////////////// Wyswietlanie////////////////////////
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),2);
     cout << "A   B   C   D       x   X   y   Y" << endl;
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),15);
     TEMPY(Temp1, Temp2, Temp3, Temp4);
     KONCOWE(Konc1, Konc2, Konc3, Konc4);
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),2);
     cout << "1   2   3   4   5   6   7   8" << endl
          <<endl;
          SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),15
