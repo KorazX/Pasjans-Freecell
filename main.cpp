@@ -230,28 +230,8 @@ int KOLUMNY(int kolumna, int pole [8][20]){
 int wartosc;
 wartosc=0;
 
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]>-1){wartosc++;}
-if(pole[kolumna][wartosc]==-1){wartosc--; return wartosc;}
+while (pole[kolumna][wartosc] > -1)wartosc++;
+    if (pole[kolumna][wartosc] == -1) { wartosc--; return wartosc; }
 }
 
 void SPRAWDZANIE(int pole [8][20],int Temp1,int Temp2,int Temp3,int Temp4,int Konc1,int Konc2,int Konc3,int Konc4){
